@@ -17,6 +17,31 @@ In Backend,
 - Used Body Parser to access the Body from the request.
 - Mongoose to Connect to MongoDB atlas DataBase.
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/KKA-0/Task_Manager.git
+```
+
+Go to the project directory & Install dependencies
+
+```bash
+  cd Client/npm i
+  cd Server/npm i
+```
+
+Start the server
+
+```bash
+  cd Client/npm start
+  cd Server/npm start
+```
+
+
+
 # Demo Video
 
 below is the demo video to case the working of the project.
