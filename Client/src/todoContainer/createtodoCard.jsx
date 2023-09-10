@@ -15,7 +15,7 @@ const CreateToDoCard = (props) => {
             console.log("message is empty")
         }else{
             axios
-                .post('/api/add',{
+                .post('https://taskmanager-c17v.onrender.com/api/add',{
                         "taskname" : message    
                 })
                 .then((res) => {
