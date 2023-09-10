@@ -12,7 +12,7 @@ function App() {
   
   async function fetchData() {
     try {
-      const response = await axios.get('https://taskmanager-c17v.onrender.com/api/all');
+      const response = await axios.get('/api/all');
       setCollection(response.data.data.tasks);
       // console.log("fetchData ", response.data.data.tasks);
     } catch (error) {
