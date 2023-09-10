@@ -1,17 +1,17 @@
 # Task_Manager
 A MERN Stack Project for Managing tasks, In ToDO, Doing and Done.
 # Tech Stack used
-- Frontend - HTML, CSS, Javascript, React.js
- - Backend - Node.js, Express.js
-- DataBase - MongoDB
+- **Frontend** - HTML, CSS, Javascript, React.js
+ - **Backend** - Node.js, Express.js
+- **DataBase** - MongoDB
 
-In Front,
+**In Front,**
 - I have not used any React library to achieve Drag and Drop Functionality.
 - Used useState and useEffect React Hooks.
 - Used Axios to make API calls.
 - animate.css to get animation styling
 
-In Backend, 
+**In Backend,**
 - I have used Nodemon to restart the server automatically,
 - Morgan middleware to log API calls in terminal.
 - Used Body Parser to access the Body from the request.
@@ -27,17 +27,20 @@ Clone the project
 ```
 
 Go to the project directory & Install dependencies
+Start the server
+- For Client
 
 ```bash
-  cd Client/npm i
-  cd Server/npm i
+  cd Client
+  npm i
+  npm start
 ```
 
-Start the server
 
 ```bash
-  cd Client/npm start
-  cd Server/npm start
+  cd Server
+  npm i
+  npm start
 ```
 
 
