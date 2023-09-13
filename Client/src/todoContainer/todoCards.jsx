@@ -14,7 +14,7 @@ const TodoCards = (props) => {
     if(props.Status === "1"){
       console.warn(props.title._id)
       axios
-        .patch(`https://task-manager-kka.onrender.com:6969/api/TodoDoing/${props.title._id}`,{})
+        .patch(`https://taskmanager-c17v.onrender.com/api/TodoDoing/${props.title._id}`,{})
         .then((res) => {
           console.log(props.title._id)
           sethandleSubmit(Math.random)
@@ -24,7 +24,7 @@ const TodoCards = (props) => {
     else if(props.Status === "0"){
       console.warn(props.title._id)
       axios
-        .patch(`https://task-manager-kka.onrender.com:6969/api/Todo/${props.title._id}`,{})
+        .patch(`https://taskmanager-c17v.onrender.com/api/Todo/${props.title._id}`,{})
         .then((res) => {
           console.log(props.title._id)
           sethandleSubmit(Math.random)
@@ -34,7 +34,7 @@ const TodoCards = (props) => {
     else if(props.Status === "2"){
       console.warn(props.title._id)
       axios
-        .patch(`https://task-manager-kka.onrender.com:6969/api/TodoDone/${props.title._id}`,{})
+        .patch(`https://taskmanager-c17v.onrender.com/api/TodoDone/${props.title._id}`,{})
         .then((res) => {
           console.log(props.title._id)
           sethandleSubmit(Math.random)
@@ -45,7 +45,7 @@ const TodoCards = (props) => {
 
   const deleteTask = () => {
     axios
-        .delete(`https://task-manager-kka.onrender.com:6969/api/${props.title._id}`,{})
+        .delete(`https://taskmanager-c17v.onrender.com/api/${props.title._id}`,{})
         .then((res) => {
           console.log(props.title._id)
           sethandleSubmit(Math.random)
