@@ -4,7 +4,7 @@ const mongoose  = require('mongoose')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const router = require('./Routers/crudRoute')
-const port = 6000
+const port = 6969
 
 app.use(bodyParser.json())
 
