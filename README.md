@@ -3,6 +3,8 @@ A MERN Stack Project for Managing tasks, In ToDO, Doing and Done.
 
 [![wakatime](https://wakatime.com/badge/user/ea9792e5-799b-44a2-a25f-c28679dbaa38/project/6d74e321-325f-471a-99db-6a8e8233c94e.svg)](https://wakatime.com/badge/user/ea9792e5-799b-44a2-a25f-c28679dbaa38/project/6d74e321-325f-471a-99db-6a8e8233c94e)
 
+[![run main.py](https://github.com/KKA-0/Task_Manager/actions/workflows/main.yml/badge.svg?event=schedule)](https://github.com/KKA-0/Task_Manager/actions/workflows/main.yml)
+
 # Tech Stack used
 - **Frontend** - HTML, CSS, Javascript, React.js
  - **Backend** - Node.js, Express.js
