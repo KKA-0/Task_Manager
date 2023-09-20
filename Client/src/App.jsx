@@ -9,11 +9,16 @@ function App() {
   const [collection, setCollection] = useState([]);
   const [idget, setidget] = useState("")
   const [CardMovedStatus, setCardMovedStatus] = useState(0)
+  const [Loading, setLoading] = useState({display: "initial"})
+
   
+
+
   async function fetchData() {
     try {
       const response = await axios.get('https://taskmanager-c17v.onrender.com/api/all');
       setCollection(response.data.data.tasks);
+      setLoading({display: "none"})
       // console.log("fetchData ", response.data.data.tasks);
     } catch (error) {
       console.log(error);
@@ -118,7 +123,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <img className='Loading' style={Loading} src='https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif' />
       <div className="todoContainer">
         <div onDragOver={DragOver} onDrop={onDropTodo} onDragLeave={onDragLeave} onDragEnter={DragEnter} onDragEnd={onDragEnd} className='cards'>
         <div style={{ backgroundColor: "red" }} className="titleContainer">

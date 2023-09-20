@@ -8,6 +8,11 @@
   align-items: center;
   overflow-y: scroll;
 }
+.Loading {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
 .todoContainer{
   display: flex;
   flex-wrap: wrap;
