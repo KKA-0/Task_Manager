@@ -10,7 +10,7 @@ services:
 
   client:
     build:
-      context: ./client
+      context: ./Client
       dockerfile: Dockerfile
     depends_on:
       - server
@@ -20,7 +20,7 @@ services:
 
   server:
     build:
-      context: ./server
+      context: ./Server
       dockerfile: Dockerfile
 
     ports:
