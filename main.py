@@ -26,6 +26,6 @@ except KeyError:
 
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
-    response = requests.get('https://taskmanager-c17v.onrender.com/api/all')
+    response = requests.get('/api/all')
     if response.status_code == 200:
         data = response.json()
